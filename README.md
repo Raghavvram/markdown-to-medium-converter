@@ -79,6 +79,30 @@ To serve the production build locally, you can use a static server like `serve`:
 
     This will serve the production build at `http://localhost:3000` (or another available port).
 
+## Dockerization
+
+This project can be easily containerized using Docker.
+
+### Building the Docker Image
+
+To build the Docker image, navigate to the root of the project directory and run the following command:
+
+```bash
+docker build -t markdown-to-medium-converter .
+```
+
+This command builds a Docker image named `markdown-to-medium-converter` based on the `Dockerfile` in the project root.
+
+### Running the Docker Container
+
+Once the Docker image is built, you can run the application in a Docker container using the following command:
+
+```bash
+docker run -p 3000:3000 markdown-to-medium-converter
+```
+
+This command runs the `markdown-to-medium-converter` image and maps port `3000` of your host to port `3000` inside the container. You can then access the application in your web browser at `http://localhost:3000`.
+
 ## Project Explanation
 
 This project started as a basic React Markdown previewer. The development process involved:

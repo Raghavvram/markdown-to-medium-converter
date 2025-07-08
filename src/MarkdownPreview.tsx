@@ -26,7 +26,7 @@ const MarkdownPreview: React.FC = () => {
         placeholder="Enter Markdown here"
       />
       <div
-        className="flex-1 p-6 overflow-auto prose dark:prose-invert lg:prose-xl bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out"
+        className="flex-1 p-6 overflow-auto prose dark:prose-invert lg:prose-xl bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out text-left"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
     </div>
