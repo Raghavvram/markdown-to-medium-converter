@@ -18,15 +18,15 @@ const MarkdownPreview: React.FC = () => {
   };
 
   return (
-    <div className="flex w-full h-screen dark:bg-gray-900 dark:text-gray-100">
+    <div className="flex w-full h-screen dark:bg-gray-900 dark:text-gray-100 font-sans">
       <textarea
-        className="flex-1 p-5 border border-gray-300 dark:border-gray-700 overflow-auto resize-none font-mono bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+        className="flex-1 p-6 border-r border-gray-300 dark:border-gray-700 overflow-auto resize-none text-lg leading-relaxed bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
         value={markdown}
         onChange={handleChange}
         placeholder="Enter Markdown here"
       />
       <div
-        className="flex-1 p-5 border border-gray-300 dark:border-gray-700 overflow-auto bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+        className="flex-1 p-6 overflow-auto prose dark:prose-invert lg:prose-xl bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-colors duration-300 ease-in-out"
         dangerouslySetInnerHTML={{ __html: htmlContent }}
       />
     </div>
