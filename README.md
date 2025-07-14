@@ -2,6 +2,9 @@
 
 This project is a simple web application built with React that allows users to preview Markdown content, similar to how it would appear on platforms like Medium. It features a live preview, a clean user interface, and a dark mode.
 
+![Image](https://raw.githubusercontent.com/Raghavvram/markdown-to-medium-converter/bbdd5ae1e5f70ec2d1bf2825533a7d67903aebb1/public/md-to-medium.png)
+
+
 ## Features
 
 - Live Markdown preview
